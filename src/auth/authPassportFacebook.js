@@ -6,6 +6,7 @@ const {
   FACEBOOK_CLIENT_SECRET,
 } = require("../config/globals");
 
+//NO SE USA FACEBOOK//
 // /*Sino vamos a usar las variables de entorno */
 // const FACEBOOK_CLIENT_ID = process.env.FACEBOOK_CLIENT_ID;
 // const FACEBOOK_CLIENT_SECRET = process.env.FACEBOOK_CLIENT_SECRET;

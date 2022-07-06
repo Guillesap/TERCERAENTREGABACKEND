@@ -1,25 +1,25 @@
-/*Creo servidor */
+/*SERVER */
 const express = require("express");
-/*Inicializamos express */
+/*EXPRESS */
 const app = express();
-/*Le pasamos la constante app que creamos arriba */
+/*CONSTANTE */
 const http = require("http").Server(app);
 
-/*Le pasamos la constante http */
+/*HTTP */
 const io = require("socket.io")(http);
 
-/*Cargo módulo Handlebars */
+/*MODULO HANDLEBARS */
 const handlebars = require("express-handlebars");
 
-/*Requiero cors */
+/*CORS */
 const cors = require("cors");
 app.use(cors());
 
-/*Requiero compression*/
+/*COMPRESSION*/
 const compression = require("compression");
 app.use(compression());
 
-/*Requiero Multer*/
+/*MULTER*/
 const multer = require("multer");
 const storageMulter = multer.diskStorage({
   destination: "public/avatar",
@@ -34,17 +34,17 @@ app.use(
   }).single("avatar")
 );
 
-/*Requiero passport */
+/*PASSPORT */
 const passport = require("passport");
-/*Requiero Session*/
+/*SESSO*/
 const session = require("express-session");
-/*Requiero CookieParser */
+/*COOKIE-PARSER */
 const cookieParser = require("cookie-parser");
-/*Requiero Mongo Store para guardar sesiones */
+/*MONGO STORE */
 const MongoStore = require("connect-mongo");
-/*Configuración para Mongo Atlas */
+/*MONGO ATLAS */
 const advancedOptions = { useNewUrlParser: true, useUnifiedTopology: true };
-/*Establecemos que la sessión se guarde en MongoStore */
+/*MONGO STORE */
 app.use(
   session({
     store: MongoStore.create({
@@ -63,12 +63,12 @@ app.use(
 );
 app.use(cookieParser());
 
-/*Middleware Passport: SIEMPRE VAN ANTES QUE LAS RUTAS */
+/*Middleware Passport:  ANTES QUE LAS RUTAS */
 app.use(passport.initialize());
 app.use(passport.session());
 
 /*Router */
-/*Requerimos las rutas que va a ofrecer nuestra aplicación */
+/*Se requieren las  rutas que va a ofrecer nuestra aplicación */
 const routesProducts = require("./src/routes/routesProducts");
 const routerProducts = express.Router();
 const routesCart = require("./src/routes/routesCart");
@@ -137,7 +137,7 @@ app.use(routesProcessInfo(routerProcessInfo));
 app.use(routesRandom(routerRandom));
 
 /*Socket.io: Chat */
-/*Requiero la funcion socketIo que lo que contiene adentro es toda la conexión IO. Le paso por parametro el io que es basicamente la que establece la conexión. */
+/* Funcion socketIo que lo que contiene adentro es toda la conexión IO. Le paso por parametro el io que es basicamente la que establece la conexión. */
 const socketConnection = require("./src/services/messagesIOchat");
 socketConnection(io);
 
