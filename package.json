@@ -19,7 +19,7 @@
     "start:inspect": "node --inspect index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Guille Sapag",
   "license": "ISC",
   "dependencies": {
     "autocannon": "^7.9.0",
