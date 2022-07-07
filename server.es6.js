@@ -49,7 +49,7 @@ app.use(
   session({
     store: MongoStore.create({
       mongoUrl:
-        "mongodb+srv://marco-bertonati-session:u3TiWI9S5xBiAT39@cluster1.gplx5.mongodb.net/ecommerce?retryWrites=true&w=majority",
+        "mongodb+srv://guillesapag:mercyful69@cluster0.eh9yf.mongodb.net/baseterror?retryWrites=true&w=majority",
       mongoOptions: advancedOptions,
       ttl: 600,
     }),
@@ -137,7 +137,7 @@ app.use(routesProcessInfo(routerProcessInfo));
 app.use(routesRandom(routerRandom));
 
 /*Socket.io: Chat */
-/* Funcion socketIo que lo que contiene adentro es toda la conexión IO. Le paso por parametro el io que es basicamente la que establece la conexión. */
+/* Funcion socketIo que lo que contiene adentro es toda la conexión IO. */
 const socketConnection = require("./src/services/messagesIOchat");
 socketConnection(io);
 

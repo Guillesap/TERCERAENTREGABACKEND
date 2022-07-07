@@ -61,7 +61,7 @@ exports.createCart = async (req, res, next) => {
     await whatsAppTwilio(emailSubject, req.session.passport.user.number);
     await smsTwilio(
       req.session.passport.user.number,
-      "Hemos recibido su pedido  y se encuentra en proceso"
+      "Hemos recibido su pedido de películas y se encuentra en proceso"
     );
 
     delete req.session.cartSession;

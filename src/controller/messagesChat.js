@@ -30,7 +30,7 @@ exports.getAllMsgChat = async (req, res, next) => {
 
      const userSchema = new schema.Entity('authors',{}, {idAttribute: (value) => value.alias});
 
-     pero si no le colocamos nada lo que hace es leer por defecto dentro de author (consignado en el entry schema "author:userSchema") la propiedad ID, que en nuestra DB es el mail. Si en vez de ponerle author le pongo otra cosa se va a romper. 
+     pero si no le colocamos nada lo que hace es leer por defecto dentro de author (consignado en el entry schema "author:userSchema") la propiedad ID, que en nuestra DB es el mail. 
 
     */
 
