@@ -1,5 +1,3 @@
-// const accountSid = "ACbb5223e76909088545d87f37deee0df5";
-// const authToken = "fd10f37d9d071a52976fbbb7e2e74b8c";
 
 const {
   TWILIO_ACCOUNT_SID,
@@ -14,7 +12,7 @@ module.exports = (user, text) => {
     .create({
       body: `El usuario ${user} escribio administrador y el siguiente texto: ${text}`,
       from: TWILIO_NUMBER,
-      to: "+542616171509",
+      to: "+541135826970",
     })
     .then((message) => console.log(message.sid))
     .catch(console.log);

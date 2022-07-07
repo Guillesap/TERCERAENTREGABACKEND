@@ -14,7 +14,7 @@ const cartSchema = new Schema({
   /* COMO ESTÁ DEBAJO FUNCIONA, PERO FALTARIA LA CANTIDAD */
   // product: [productSchema]
 
-  /* ASIQUE PROBAMOS HACERLO ASI */
+  /*  PROBAMOS HACERLO ASI */
   productsOnCart: [productOnCartSchema]
 
 });
