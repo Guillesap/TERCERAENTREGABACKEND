@@ -61,8 +61,6 @@ label {
   }
 
   #foto img{
-    border: solid;
-    border-color: rgb(151, 204, 25);
     margin: 0 auto;
     size: 10 mm;
   }
