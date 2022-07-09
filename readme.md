@@ -3,7 +3,7 @@
 <p>El proyecto de un Video Club virtual, en el cual el usuario puede seleccionar películas de terror clásicas para los nostaligos. El usuario se registra, inicia su sesión y puede observar la Tienda de Películas. Asimismo, cuenta con una sección de Chat, para realizar consultas.
 </p>
 
-## 🏠 [Homepage](https://github.com/Guillesap)
+## 🌐 [Ver Proyecto en Heroku](https://guillesapag.herokuapp.com/login)
 
 ## 🤝Instalar dependencias
 npm install
@@ -11,8 +11,7 @@ npm install
 ## ✨Iniciar el servidor
 npm run start
 
-## 🌐 [Ver Proyecto en Heroku](https://guillesapag.herokuapp.com/login)
-
+## 🏠 [Homepage](https://github.com/Guillesap)
 
 ## 📝 License
 
