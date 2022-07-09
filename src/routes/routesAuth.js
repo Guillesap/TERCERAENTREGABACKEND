@@ -11,7 +11,7 @@ const {
   logInCallbackFacebook,
 } = require("../controller/authController");
 
-/*Requiero el controlador de autenticación por si la persona quiere loguearse vía Facebook: Funcionalidad pausada ya que estamos manejando vía PassportLocal */
+/*Requiero el controlador de autenticación por si la persona quiere loguearse vía Facebook: Funcionalidad pausada, ahora es  vía PassportLocal */
 const passportFacebook = require("../auth/authPassportFacebook");
 
 module.exports = (router) => {
