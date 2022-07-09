@@ -10,7 +10,7 @@ npm install
 ## Iniciar el servidor
 npm run start
 
-## ✨ Ver el deploy en Heroku:
+## ✨ Ver Proyecto en Heroku:
 Para visualizar el proyecto:
 https://guillesapag.herokuapp.com/login
 
