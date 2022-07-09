@@ -1,5 +1,5 @@
 <h1 align="center">Tercera Entrega del proyecto final</h1>
-<h2 align="center">VHS VIDEO CLUB</h2>
+<h2 align="center">VHS ONLINE VIDEO CLUB</h2>
 
 # 🏠 [Homepage](https://github.com/Guillesap)
 
